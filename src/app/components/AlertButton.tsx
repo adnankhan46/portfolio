@@ -1,9 +1,10 @@
 'use client';
 
 export default function AlertButtonLive() {
-  const showAlertLive = () => {
+  const showAlertLive = (e: React.MouseEvent<HTMLButtonElement>) => {
+    e.preventDefault();
     alert('Will be updating soon.');
   };
 
-  return <button onClick={showAlertLive}>View live</button>;
+  return <button onClick={showAlertLive}>View Live</button>;
 }
