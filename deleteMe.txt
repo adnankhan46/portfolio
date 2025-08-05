@@ -1,0 +1,2 @@
+AI Digital Electronics Question Solver – Sketch Questions on Whiteboard or Upload an Image for Logic 
+Gates, Code Conversions (BCD to Excess 3, etc.), K-Map, Binary Arithmetic, Boolean Algebra.

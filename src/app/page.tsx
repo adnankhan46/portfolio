@@ -1,19 +1,30 @@
-import { Inter } from 'next/font/google'
+"use client"
 import Link from 'next/link';
 import { Experience, Project } from './types';
-import AlertButtonLive from './components/AlertButton';
 import Image from 'next/image'
-
-const inter = Inter({ subsets: ['latin'] })
+import { useState } from 'react';
 
 
 export default function Home() {
-  const skills = ['C++', 'JavaScript', 'TypeScript', 'Next.js', 'Node.js', 'MongoDB', 'DevOps*', 'Docker', 'Python3'];
+  const [activeTab, setActiveTab] = useState<'personal' | 'client'>('personal');
+  
+  const skills = ['C++', 'TypeScript', 'Next.js', 'React Native', 'Node.js', 'MongoDB', 'DevOps*', 'Docker', 'Python3'];
 
-  const projects: Project[] = [
-    { name: 'CampusX', description: 'I will update it', github:'https://www.github.com/adnankhan46', url:'' },
-    { name: 'BooleanAI', description: 'AI Digital Electronics Question Solver from Whiteboard. It lets you convert Codes, Simplify Logic Gates, Boolean Algebra, Binary Arithmetic, K-Map.', github:'https://www.github.com/adnankhan46', url:'' },
-    { name: 'A toy Javascript game - for fun* ', description: 'A fun javascript obstable avoiding game. The game recieved 200+ unique visitors within 1st hour of launch in the college Campus ', github:'https://www.github.com/adnankhan46', url:'https://falaksuperman.netlify.app' },
+  const personalProjects: Project[] = [
+    { name: 'CampusX', description: '<strong>Incentivized Opportunity finding Social App</strong> | A social app in the campus that connects students with companies offering paid micro-tasks, such as: Engagement tasks, Survey tasks, Marketing tasks, Work experience tasks.\n<strong>My Work:</strong>\n• Implemented Payment System using <strong> Dodo Payments </strong>\n• Implemented NSFW Content Filteration using <strong> Tensorflow.js </strong>\n• Continuously building and scaling the product for the campusx in <strong> VPS </strong> with a 2-person team',
+      github:'https://www.github.com/adnankhan46/campusx', url:'' },
+    { 
+      name: 'BooleanAI', 
+      description: 'AI Digital Electronics Question Solver | Sketch Questions on Whiteboard or Upload an Image for Logic Gates, Code Conversions (BCD to Excess 3, etc.), K-Map, Binary Arithmetic, Boolean Algebra.', 
+      github:'https://www.github.com/adnankhan46/booleanai', 
+      url:'https://booleanai.vercel.app' 
+    },
+    { name: 'A toy Javascript game - for fun* ', description: 'A fun javascript obstable avoiding game. The game recieved 200+ unique visitors within 1st hour of launch in the college Campus ', github:'https://www.github.com/adnankhan46/falak-superman-game', url:'https://falaksuperman.netlify.app' },
+  ];
+
+  const clientProjects: Project[] = [
+    { name: 'React Native Expo App', description: 'Built using React Native Expo(TS) consist of 70+ APIs | served to real users \n -Implemented Client Side <strong>payment using Razorpay</strong> \n -Implemented <strong>Chat</strong> System', github:'', url:'' },
+    { name: 'React Native Expo', description: 'Built using React Native Expo(TS) consist of 30+ APIs | served to real users \n -Implemented <strong>Chat</strong> System  \n -State management using <strong>Custom</strong> states', github:'', url:'' },
   ];
 
   
@@ -28,6 +39,11 @@ export default function Home() {
   const proofOfWork = [
     { 
       type: 'Commit', 
+      text: 'Implemented Payments using Dodo Payments',
+      url: 'https://github.com/adnankhan46/campusx/commit/bcb5378312060c2dac63e6ac7847756aea743ca1'
+    },
+    { 
+      type: 'Commit', 
       text: 'Added NSFW Content Filteration for Posts using tensorflow.js',
       url: 'https://github.com/adnankhan46/campusx/commit/fe7e3e8a74099f6d79f5c1c20910b6fa3e9a7fd3'
     },
@@ -40,7 +56,7 @@ export default function Home() {
 
 
   return (
-    <div className={`${inter.className} bg-white text-gray-900 pb-2`}>
+    <div className="bg-white text-gray-900 pb-2">
       <div className="flex items-center justify-center min-h-screen">
         <div>
          <div className="relative w-full h-36 md:h-52 lg:h-44">
@@ -81,7 +97,7 @@ export default function Home() {
 
       {/* @GitHub Contributions */}
           <section className="mb-10">
-                  <h2 className="text-2xl font-semibold mb-4">Proof of Work</h2>
+                  <h2 className="text-2xl font-semibold mb-4" style={{ fontFamily: 'var(--ppe-italic)' }}>Proof of Work</h2>
           <div className="space-y-4">
         {proofOfWork.map((item, index) => (
           <a 
@@ -101,6 +117,7 @@ export default function Home() {
           <main>
             <section className="mb-10">
               <h2 className="text-2xl font-semibold mb-4">Skills</h2>
+              
               <div className="flex flex-wrap gap-2">
                 {skills.map((skill) => (
                   <span key={skill} className="bg-gray-100 px-3 py-1 rounded-lg text-sm">
@@ -112,28 +129,55 @@ export default function Home() {
             {/* ##################  Projects */}
             <section className="mb-6">
               <h2 className="text-2xl font-semibold mb-4">Projects</h2>
-              <ul className="space-y-4">
-                {projects.map((project) => (
-                  <li key={project.name} className=" flex flex-col border-l-2 border-gray-200 pl-4">
-                    <div className='flex flex-col'>
-                    <h3 className="font-semibold">{project.name}</h3>
-                    <p className="text-sm text-gray-600 ">{project.description}</p>
-                    </div>
-                      
-                    <div className='flex gap-2 my-2'>
-                    <Link href={project.github} className='text-sm bg-gray-100 px-3 py-1 rounded-full inline cursor-pointer'>Github</Link>
-                   <div className='text-sm bg-gray-100 px-3 py-1 rounded-full inline cursor-pointer'>
-                    {(project.url.length!=0) ? 
-                    <Link href={project.url} >
-                      View Live<span className="absolute w-2 h-2 me-2 bg-green-400 rounded-full"></span>
-                    </Link>
-                     : <AlertButtonLive/>}
+              
+              {/* Tab Navigation */}
+              <div className="flex mb-4 border-b border-gray-200">
+                <button
+                  onClick={() => setActiveTab('personal')}
+                  className={`px-4 py-2 font-medium text-sm border-b-2 transition-colors ${
+                    activeTab === 'personal'
+                      ? 'border-gray-400 bg-gray-100 rounded-t-lg'
+                      : 'border-transparent text-gray-500 hover:text-gray-700'
+                  }`}
+                >
+                  Personal Projects
+                </button>
+                <button
+                  onClick={() => setActiveTab('client')}
+                  className={`px-4 py-2 font-medium text-sm border-b-2 transition-colors ${
+                    activeTab === 'client'
+                      ? 'border-gray-400 bg-gray-100 rounded-t-lg'
+                      : 'border-transparent text-gray-500 hover:text-gray-700'
+                  }`}
+                >
+                  Client Works
+                </button>
+              </div>
 
-                    </div>
-                    </div>
-                  </li>
-                ))}
-              </ul>
+              {/* Projects Content */}
+              <div className={`p-4`}>
+                <ul className="space-y-4">
+                  {(activeTab === 'personal' ? personalProjects : clientProjects).map((project) => (
+                    <li key={project.name} className=" flex flex-col border-l-2 border-gray-200 pl-4">
+                      <div className='flex flex-col'>
+                      <h3 className="font-semibold">{project.name}</h3>
+                      <p className="text-sm text-gray-600 whitespace-pre-line" dangerouslySetInnerHTML={{ __html: project.description }}></p>
+                      </div>
+                        
+                      <div className='flex gap-2 my-2'>
+                      <Link href={project.github} className='text-sm bg-gray-100 px-3 py-1 rounded-lg inline cursor-pointer'>Github</Link>
+                      {project.url &&
+                     <div className='text-sm bg-gray-100 px-3 py-1 rounded-lg inline cursor-pointer'> 
+                       <Link href={project.url} >
+                        View
+                      </Link>
+
+                      </div>}
+                      </div>
+                    </li>
+                  ))}
+                </ul>
+              </div>
               <div className='flex justify-center mt-2'>
               <div className='text-center bg-gray-100 px-3 py-1 rounded-md inline cursor-pointer'>
                 <Link href='/projects'>View All</Link>

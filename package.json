@@ -10,12 +10,14 @@
   },
   "dependencies": {
     "@vercel/analytics": "^1.4.1",
+    "katex": "^0.16.22",
     "next": "15.1.5",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
+    "@types/katex": "^0.16.7",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
