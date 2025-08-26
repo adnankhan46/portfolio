@@ -166,18 +166,29 @@ export default function Home() {
                       </div>
                         
                       <div className='flex gap-2 my-2'>
-                      {activeTab === 'client' ?
-                      <Link href={project.playstore} className='text-sm bg-gray-100 px-3 py-1 rounded-lg inline cursor-pointer'>Playstore URL</Link>
-                      :<Link href={project.github} className='text-sm bg-gray-100 px-3 py-1 rounded-lg inline cursor-pointer'>Github</Link>
-                      }
-                      {project.url &&
-                     <div className='text-sm bg-gray-100 px-3 py-1 rounded-lg inline cursor-pointer'> 
-                       <Link href={project.url} >
-                        View
-                      </Link>
+  {activeTab === 'client' ? (
+    project.playstore && (
+      <Link href={project.playstore} className='text-sm bg-gray-100 px-3 py-1 rounded-lg inline cursor-pointer'>
+        Playstore URL
+      </Link>
+    )
+  ) : (
+    project.github && (
+      <Link href={project.github} className='text-sm bg-gray-100 px-3 py-1 rounded-lg inline cursor-pointer'>
+        Github
+      </Link>
+    )
+  )}
+  
+  {project.url && (
+    <div className='text-sm bg-gray-100 px-3 py-1 rounded-lg inline cursor-pointer'>
+      <Link href={project.url}>
+        View
+      </Link>
+    </div>
+  )}
+</div>
 
-                      </div>}
-                      </div>
                     </li>
                   ))}
                 </ul>

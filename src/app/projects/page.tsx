@@ -2,7 +2,7 @@ import React from 'react'
 import Link from 'next/link';
 import { Inter } from 'next/font/google'
 import { Project } from '../types';
-import AlertButtonLive from '../components/AlertButton';
+// import AlertButtonLive from '../components/AlertButton';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -31,16 +31,23 @@ function page() {
                     </div>
                       
                     <div className='flex gap-2 my-2'>
-                    <Link href={project.github} className='text-sm bg-gray-100 px-3 py-1 rounded-full inline cursor-pointer'>Github</Link>
-                    <div className='text-sm bg-gray-100 px-3 py-1 rounded-full inline cursor-pointer'>
-                    {(project.url.length!=0) ? 
-                    <Link href={project.url} >
-                      View Live<span className="absolute w-2 h-2 me-2 bg-green-400 rounded-full"></span>
-                    </Link>
-                     : <AlertButtonLive/>}
+  {(
+    project.github && (
+      <Link href={project.github} className='text-sm bg-gray-100 px-3 py-1 rounded-lg inline cursor-pointer'>
+        Github
+      </Link>
+    )
+  )}
+  
+  {project.url && (
+    <div className='text-sm bg-gray-100 px-3 py-1 rounded-lg inline cursor-pointer'>
+      <Link href={project.url}>
+        View
+      </Link>
+    </div>
+  )}
+</div>
 
-                    </div>
-                    </div>
                   </li>
                 ))}
               </ul>
