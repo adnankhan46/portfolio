@@ -9,10 +9,10 @@ const inter = Inter({ subsets: ['latin'] })
 function page() {
 
     const projects: Project[] = [
-        { name: 'CampusX', description: 'I will update it', github:'https://www.github.com/adnankhan46', url:'', live: false,image: '/projects/sheshield.png' },
-        { name: 'BooleanAI', description: 'AI Digital Electronics Question Solver from Whiteboard. It lets you convert Codes, Simplify Logic Gates, Boolean Algebra, Binary Arithmetic, K-Map.', github:'https://www.github.com/adnankhan46', url:'', live: false },
-        { name: 'A toy Javascript game - for fun* ', description: 'A fun javascript obstable avoiding game. The game recieved 200+ unique visitors within 1st hour of launch in the college Campus ', github:'https://www.github.com/adnankhan46', url:'https://falaksuperman.netlify.app', live: true },
-        { name: 'SheShield ', description: 'The SheShield is designed to provide emergency assistance in unsafe situations. It includes features like SOS alerts, safe zone tracking, whiteboard gesture detection, timer-based emergency alerts, and fake call simulation for personal safety.', github:'https://github.com/adnankhan46/bit-innovathon', url:'', live: false },
+        { name: 'CampusX', description: 'I will update it', github:'https://www.github.com/adnankhan46', url:'', live: false,image: '/projects/sheshield.png', playstore: ''},
+        { name: 'BooleanAI', description: 'AI Digital Electronics Question Solver from Whiteboard. It lets you convert Codes, Simplify Logic Gates, Boolean Algebra, Binary Arithmetic, K-Map.', github:'https://www.github.com/adnankhan46', url:'', live: false, playstore: ''},
+        { name: 'A toy Javascript game - for fun* ', description: 'A fun javascript obstable avoiding game. The game recieved 200+ unique visitors within 1st hour of launch in the college Campus ', github:'https://www.github.com/adnankhan46', url:'https://falaksuperman.netlify.app', live: true, playstore: ''},
+        { name: 'SheShield ', description: 'The SheShield is designed to provide emergency assistance in unsafe situations. It includes features like SOS alerts, safe zone tracking, whiteboard gesture detection, timer-based emergency alerts, and fake call simulation for personal safety.', github:'https://github.com/adnankhan46/bit-innovathon', url:'', live: false, playstore: ''},
       ];
     
   return (
