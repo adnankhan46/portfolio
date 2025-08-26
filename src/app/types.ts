@@ -2,7 +2,8 @@ export interface Project {
     name: string;
     description: string;
     github: string;
-    url: string;
+    url?: string; // for web
+    playstore: string; // for app
     live?: boolean;
     image?: string;
   }

@@ -12,19 +12,20 @@ export default function Home() {
 
   const personalProjects: Project[] = [
     { name: 'CampusX', description: '<strong>Incentivized Opportunity finding Social App</strong> | A social app in the campus that connects students with companies offering paid micro-tasks, such as: Engagement tasks, Survey tasks, Marketing tasks, Work experience tasks.\n<strong>My Work:</strong>\n• Implemented Payment System using <strong> Dodo Payments </strong>\n• Implemented NSFW Content Filteration using <strong> Tensorflow.js </strong>\n• Continuously building and scaling the product for the campusx in <strong> VPS </strong> with a 2-person team',
-      github:'https://www.github.com/adnankhan46/campusx', url:'' },
+      github:'https://www.github.com/adnankhan46/campusx', url:'', playstore:'' },
     { 
       name: 'BooleanAI', 
       description: 'AI Digital Electronics Question Solver | Sketch Questions on Whiteboard or Upload an Image for Logic Gates, Code Conversions (BCD to Excess 3, etc.), K-Map, Binary Arithmetic, Boolean Algebra.', 
       github:'https://www.github.com/adnankhan46/booleanai', 
-      url:'https://booleanai.vercel.app' 
+      url:'https://booleanai.vercel.app', 
+      playstore: ''
     },
-    { name: 'A toy Javascript game - for fun* ', description: 'A fun javascript obstable avoiding game. The game recieved 200+ unique visitors within 1st hour of launch in the college Campus ', github:'https://www.github.com/adnankhan46/falak-superman-game', url:'https://falaksuperman.netlify.app' },
+    { name: 'A toy Javascript game - for fun* ', description: 'A fun javascript obstable avoiding game. The game recieved 200+ unique visitors within 1st hour of launch in the college Campus ', github:'https://www.github.com/adnankhan46/falak-superman-game', url:'https://falaksuperman.netlify.app', playstore: '' },
   ];
 
   const clientProjects: Project[] = [
-    { name: 'React Native Expo App', description: 'Built using React Native Expo(TS) consist of 70+ APIs | served to real users \n -Implemented Client Side <strong>payment using Razorpay</strong> \n -Implemented <strong>Chat</strong> System', github:'', url:'' },
-    { name: 'React Native Expo', description: 'Built using React Native Expo(TS) consist of 30+ APIs | served to real users \n -Implemented <strong>Chat</strong> System  \n -State management using <strong>Custom</strong> states', github:'', url:'' },
+    { name: 'React Native Expo App', description: 'Built using React Native Expo(TS) consist of 70+ APIs | served to real users \n -Implemented Client Side <strong>payment using Razorpay</strong> \n -Implemented <strong>Chat</strong> System', playstore:'https://play.google.com/store/apps/details?id=com.developerknowforth.visitor', github: '' },
+    { name: 'React Native Expo', description: 'Built using React Native Expo(TS) consist of 30+ APIs | served to real users \n -Implemented <strong>Chat</strong> System  \n -State management using <strong>Custom</strong> states', playstore:'https://play.google.com/store/apps/details?id=com.developerknowforth.visitor', github: '' },
   ];
 
   
@@ -165,7 +166,10 @@ export default function Home() {
                       </div>
                         
                       <div className='flex gap-2 my-2'>
-                      <Link href={project.github} className='text-sm bg-gray-100 px-3 py-1 rounded-lg inline cursor-pointer'>Github</Link>
+                      {activeTab === 'client' ?
+                      <Link href={project.playstore} className='text-sm bg-gray-100 px-3 py-1 rounded-lg inline cursor-pointer'>Playstore URL</Link>
+                      :<Link href={project.github} className='text-sm bg-gray-100 px-3 py-1 rounded-lg inline cursor-pointer'>Github</Link>
+                      }
                       {project.url &&
                      <div className='text-sm bg-gray-100 px-3 py-1 rounded-lg inline cursor-pointer'> 
                        <Link href={project.url} >
@@ -178,11 +182,11 @@ export default function Home() {
                   ))}
                 </ul>
               </div>
-              <div className='flex justify-center mt-2'>
+              {/* <div className='flex justify-center mt-2'>
               <div className='text-center bg-gray-100 px-3 py-1 rounded-md inline cursor-pointer'>
                 <Link href='/projects'>View All</Link>
               </div>
-              </div>
+              </div> */}
             </section>
             {/* ################## Exp */}
             <section className='mb-10'>
