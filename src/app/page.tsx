@@ -111,7 +111,7 @@ export default function Home() {
             <header className="mb-4">
               <h1 className="text-4xl font-bold mt-2">Adnan Khan</h1>
               <p className="text-lg mt-2">
-                I am second year undergrad and a hobbyist developer
+                I am pre-final year undergrad and a hobbyist developer
               </p>
               <p className="text-lg mt-2">I started programming at 13</p>
             </header>

@@ -111,7 +111,7 @@ function page() {
     
   return (
     <div className={`${inter.className} bg-white text-gray-900 pb-2`}>
-      <div className="flex pt-6 items-center justify-center min-h-screen">
+      <div className="flex items-center justify-center min-h-screen">
       <div className="w-full max-w-3xl shadow-md rounded-lg">
       {/* Some headers */}
       <div>
