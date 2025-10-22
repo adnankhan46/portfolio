@@ -52,7 +52,7 @@ export default function Home() {
       description:
         "Built using React Native Expo(TS) consist of 70+ APIs | served to real users \n -Implemented Client Side <strong>payment using Razorpay</strong> \n -Implemented <strong>Chat</strong> System",
       playstore:
-        "https://play.google.com/store/apps/details?id=com.developerknowforth.visitor",
+        "https://play.google.com/store/apps/details?id=com.developerknowforth.exhibitor",
       github: "",
     },
     {
@@ -282,7 +282,7 @@ export default function Home() {
                 <div className="flex items-center gap-2 justify-center mt-2">
                  <h2 className="font-serif"> View all my C<span style={{ fontFamily: "var(--ppe-italic)" }}>oo</span>l pr<span style={{ fontFamily: "var(--ppe-italic)" }}>o</span>jects here </h2>
                   <div className="text-center bg-gray-100 px-3 py-1 rounded-md inline cursor-pointer">
-                    <Link href="/projects">Show All</Link>
+                    <Link href="/projects"><span style={{ fontFamily: "var(--ppe-italic)" }}>Show All</span></Link>
                   </div>
                 </div>
               </section>
@@ -337,7 +337,7 @@ export default function Home() {
                   href="https://www.x.com/adnankhan_93"
                   className="hover:underline"
                 >
-                  Twitter
+                  Twitter (X)
                 </a>
               </div>
             </footer>

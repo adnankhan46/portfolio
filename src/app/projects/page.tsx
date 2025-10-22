@@ -209,6 +209,29 @@ function page() {
               </div>
               
             </section>
+            <footer className="mt-10 text-center text-lg text-gray-500 pb-8">
+              <p className="text-sm">© 2025 AK. All rights reserved.</p>
+              <div className="mt-2 space-x-4">
+                <a
+                  href="https://www.github.com/adnankhan46"
+                  className="hover:underline"
+                >
+                  GitHub
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/adnankhan93"
+                  className="hover:underline"
+                >
+                  LinkedIn
+                </a>
+                <a
+                  href="https://www.x.com/adnankhan_93"
+                  className="hover:underline"
+                >
+                  Twitter (X)
+                </a>
+              </div>
+            </footer>
         </div>
         </div>
         </div>
