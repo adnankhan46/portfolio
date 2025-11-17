@@ -11,24 +11,26 @@ function page() {
 
     const projects: Project[] = [
         { 
-          name: 'CampusX', 
+          name: 'BeCampusX', 
           description: 'A campus-based social platform where students get paid and experience by completing real company micro-tasks such as development, marketing, surveys and engagement activities.', 
           year: '(10 Nov 2023)',
           github:'https://www.github.com/adnankhan46/campusx', 
           url:'', 
           live: false,
           playstore: '',
-          openSource: true
+          openSource: true,
+          screenshot: '/projects/CampusX/cx-opp-ui.png'
         },
         { 
           name: 'BooleanAI', 
           description: 'A digital electronics helper where students can draw or upload questions like K-Maps, logic gates, or code conversions and instantly get the solved answers.', 
           year: '(29 Oct 2024)',
-          github:'https://www.github.com/adnankhan46/booleanai', 
+          github:'https://www.github.com/adnankhan46/booleanai',
           url:'https:booleanai.vercel.app', 
           live: true, 
           playstore: '',
           openSource: true,
+          screenshot: '/projects/BooleanAI/booleanai-webui.png'
         },
         { 
           name: 'CollabGPT', 
@@ -41,6 +43,16 @@ function page() {
           openSource: true,
           logo: '/projects/CollabGPT/collabgpt-logo.png',
           screenshot: '/projects/CollabGPT/collabgpt-mockup.png'
+        },
+        { 
+          name: 'Land Registry Web3', 
+          description: 'A decentralized land governance system that secures tribal land rights using blockchain and geo-tagged verification.', 
+          year: '(14 Nov 2025)',
+          github:'https://github.com/adnankhan46/land-registry-web3', 
+          live: false, 
+          playstore: '',
+          openSource: true,
+          screenshot: '/projects/LandRegistryWeb3/land-registry-dapp.png'
         },
         { 
           name: 'KytBook', 
@@ -63,6 +75,27 @@ function page() {
           screenshot: '/projects/SkytChat/skytchat-mockup.png'
         },
         { 
+          name: 'BoolAI', 
+          description: 'An assistant in your WhatsApp, call anywhere in any chat, ask group chat related questions, ask to explain received pdf. (puppeteer under the hood)', 
+          year:'(4 June 2025)',
+          github:'https://www.github.com/adnankhan46/boolai', 
+          url:'', 
+          live: false, 
+          playstore: '',
+          openSource: true,
+          screenshot: ''
+
+        },
+        { 
+          name: 'Commit App', 
+          description: 'An invite-only habit commitment platform where your friends profit from your failures. Currently down due to india\'s betting apps regulations. Invites are still open.', 
+          year:'(20 August 2025)',
+          url:'https://getcommit.vercel.app', 
+          live: false, 
+          playstore: '',
+          screenshot: '/projects/CommitApp/commit-ui.png'
+        },
+        { 
           name: 'Talk Of People', 
           description: 'App where teens can anonymously compliment each other through fun engaging polls. You vote for friends on positive compliments, and you get notified when someone picks you or your friends. Polls like \'who is funniest\'. [alternative to tbh by nikita bier](https://en.wikipedia.org/wiki/Tbh)',
           year: '(6 August 2022)',
@@ -80,24 +113,6 @@ function page() {
           live: false, 
           playstore: '',
           logo:'/projects/StudyTine/logo.png'
-        },
-        { 
-          name: 'BoolAI', 
-          description: 'An assistant in your WhatsApp, call anywhere in any chat, ask group chat related questions, ask to explain received pdf. (puppeteer under the hood)', 
-          year:'(4 June 2025)',
-          github:'https://www.github.com/adnankhan46/boolai', 
-          url:'', 
-          live: false, 
-          playstore: '',
-          openSource: true
-        },
-        { 
-          name: 'Commit App', 
-          description: 'An invite-only habit commitment platform where your friends profit from your failures. Currently down due to india\'s betting apps regulations. Invites are still open.', 
-          year:'(20 August 2025)',
-          url:'https://getcommit.vercel.app', 
-          live: false, 
-          playstore: ''
         },
         { 
           name: 'PetrolNow', 
