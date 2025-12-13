@@ -14,9 +14,12 @@ export default function Home() {
     "React Native",
     "Node.js",
     "MongoDB",
+    "PostgreSQL",
     "DevOps*",
     "Docker",
     "Python3",
+    "Supabase",
+    "Zustand",
   ];
 
   const personalProjects: Project[] = [
@@ -70,8 +73,7 @@ export default function Home() {
       title: "Freelance Cross-Plateform App Developer",
       company: "Stealth",
       period: "March 2025 - present",
-      description:
-        "Continuously building and shipping production ready apps",
+      description: "Continuously building and shipping production ready apps",
     },
     {
       title: "Web Dev intern",
@@ -203,7 +205,10 @@ export default function Home() {
               </section>
               {/* ##################  Projects */}
               <section className="mb-6">
-                <h2 className="text-2xl font-semibold font-serif mb-4">Pr<span  style={{ fontFamily: "var(--ppe-italic)" }}>o</span>jects</h2>
+                <h2 className="text-2xl font-semibold font-serif mb-4">
+                  Pr<span style={{ fontFamily: "var(--ppe-italic)" }}>o</span>
+                  jects
+                </h2>
 
                 {/* Tab Navigation */}
                 <div className="flex mb-4 border-b border-gray-200">
@@ -280,9 +285,42 @@ export default function Home() {
                   </ul>
                 </div>
                 <div className="flex items-center gap-2 justify-center mt-2">
-                 <h2 className="font-serif"> View all my C<span style={{ fontFamily: "var(--ppe-italic)" }}>oo</span>l pr<span style={{ fontFamily: "var(--ppe-italic)" }}>o</span>jects here </h2>
-                  <div className="text-center bg-gray-100 px-3 py-1 rounded-md inline cursor-pointer">
-                    <Link href="/projects"><span style={{ fontFamily: "var(--ppe-italic)" }}>Show All</span></Link>
+
+                  <div className="flex items-center gap-2 justify-center mt-2">
+                    <h2 className="font-serif text-lg">
+                      View all my C
+                      <span style={{ fontFamily: "var(--ppe-italic)" }}>
+                        oo
+                      </span>
+                      l pr
+                      <span style={{ fontFamily: "var(--ppe-italic)" }}>o</span>
+                      jects here
+                    </h2>
+
+                    <Link href="/projects">
+                      <button className="group relative inline-flex items-center justify-center px-4 py-1.5 overflow-hidden rounded-full border border-black/10 font-semibold transition-transform active:scale-95">
+                        {/* Background Layer with Grainy Gradient */}
+                        <span
+                          className="absolute inset-0 rounded-full opacity-80 transition-opacity group-hover:opacity-100"
+                          style={{
+                            backgroundImage: `url('https://img.freepik.com/free-vector/gradient-colorful-grainy-dynamic-background_52683-101908.jpg?semt=ais_hybrid&w=740&q=80')`,
+                            backgroundSize: "cover",
+                            backgroundPosition: "center",
+                            boxShadow:
+                              "inset 0px 1px 4px rgba(255, 255, 255, 0.8)",
+                          }}
+                        />
+                        <span
+                          className="relative text-white text-sm"
+                          style={{
+                            fontFamily: "var(--ppe-italic)",
+                            textShadow: "1px 1px 0px rgba(0, 0, 0, 0.3)",
+                          }}
+                        >
+                          Show All
+                        </span>
+                      </button>
+                    </Link>
                   </div>
                 </div>
               </section>
@@ -300,11 +338,11 @@ export default function Home() {
                         {exp.company} | {exp.period}
                       </p>
                       <p
-                            className="text-sm text-gray-600 whitespace-pre-line"
-                            dangerouslySetInnerHTML={{
-                              __html: exp.description,
-                            }}
-                          ></p>
+                        className="text-sm text-gray-600 whitespace-pre-line"
+                        dangerouslySetInnerHTML={{
+                          __html: exp.description,
+                        }}
+                      ></p>
                     </li>
                   ))}
                 </ul>
@@ -314,7 +352,10 @@ export default function Home() {
                 <h2 className="text-2xl font-semibold mb-4">
                   Research Projects
                 </h2>
-                <ul className="space-y-4">Improving LLM response accuracy for campus social data using domain-tuned retrieval (i will update it)</ul>
+                <ul className="space-y-4">
+                  Improving LLM response accuracy for campus social data using
+                  domain-tuned retrieval (i will update it)
+                </ul>
               </section>
             </main>
 

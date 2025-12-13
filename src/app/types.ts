@@ -10,6 +10,7 @@ export interface Project {
     logo?: string; // project logo
     screenshot?: string; // project screenshot
     openSource?: boolean; // show an open-source badge when true
+    skills?: string[]; // Project Skills
   }
 
   
