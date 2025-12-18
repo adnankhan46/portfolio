@@ -3,9 +3,18 @@
  * @param text Text containing markdown-style links [text](url)
  * @returns Array of text segments and link objects
  */
-export function parseMarkdownLinks(text: string) {
+export type MarkdownPart = 
+  | { type: 'text'; content: string }
+  | { type: 'link'; text: string; url: string };
+
+/**
+ * Parses markdown-style links in text and returns structured data
+ * @param text Text containing markdown-style links [text](url)
+ * @returns Array of text segments and link objects
+ */
+export function parseMarkdownLinks(text: string): MarkdownPart[] {
   const linkRegex = /\[([^\]]+)\]\(([^)]+)\)/g;
-  const parts = [];
+  const parts: MarkdownPart[] = [];
   let lastIndex = 0;
   let match;
 

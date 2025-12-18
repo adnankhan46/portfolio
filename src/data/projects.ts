@@ -64,7 +64,7 @@ export const allProjects: Project[] = [
       "NodeJS",
       "DodoPayments",
       "TensorFlow",
-      "ShadCN",
+      "SocketIO",
       "OCR"
     ],
   },
