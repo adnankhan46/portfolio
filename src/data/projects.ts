@@ -124,7 +124,7 @@ export const allProjects: Project[] = [
     skills: [
       "Blockchain",
       "Solidity",
-      "Ehtereum/HardHat",
+      "Ethereum/HardHat",
       "React",
       "IPFS + Pinata",
       "MetaMask Wallet",
