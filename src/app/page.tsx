@@ -1,100 +1,14 @@
 "use client";
 import Link from "next/link";
-import { Experience, Project } from "./types";
 import Image from "next/image";
 import { useState } from "react";
+import { skills } from "@/data/skills";
+import { experience } from "@/data/experience";
+import { personalProjects, clientProjects } from "@/data/projects";
+import { proofOfWork } from "@/data/proof-of-work";
 
 export default function Home() {
   const [activeTab, setActiveTab] = useState<"personal" | "client">("personal");
-
-  const skills = [
-    "C++",
-    "TypeScript",
-    "Next.js",
-    "React Native",
-    "Node.js",
-    "MongoDB",
-    "PostgreSQL",
-    "DevOps*",
-    "Docker",
-    "Python3",
-    "Supabase",
-    "Zustand",
-  ];
-
-  const personalProjects: Project[] = [
-    {
-      name: "CampusX",
-      description:
-        "<strong>Incentivized Opportunity finding Social App</strong> | A social app in the campus that connects students with companies offering paid micro-tasks, such as: Engagement tasks, Survey tasks, Marketing tasks, Work experience tasks.\n<strong>My Work:</strong>\n• Implemented Payment System using <strong> Dodo Payments </strong>\n• Implemented NSFW Content Filteration using <strong> Tensorflow.js </strong>\n• Continuously building and scaling the product for the campusx in <strong> VPS </strong> with a 2-person team",
-      github: "https://www.github.com/adnankhan46/campusx",
-      url: "",
-      playstore: "",
-    },
-    {
-      name: "BooleanAI",
-      description:
-        "AI Digital Electronics Question Solver | Sketch Questions on Whiteboard or Upload an Image for Logic Gates, Code Conversions (BCD to Excess 3, etc.), K-Map, Binary Arithmetic, Boolean Algebra.",
-      github: "https://www.github.com/adnankhan46/booleanai",
-      url: "https://booleanai.vercel.app",
-      playstore: "",
-    },
-    {
-      name: "A toy Javascript game - for fun* ",
-      description:
-        "A fun javascript obstable avoiding game. The game recieved 200+ unique visitors within 1st hour of launch in the college Campus ",
-      github: "https://www.github.com/adnankhan46/falak-superman-game",
-      url: "https://falaksuperman.netlify.app",
-      playstore: "",
-    },
-  ];
-
-  const clientProjects: Project[] = [
-    {
-      name: "React Native Expo App",
-      description:
-        "Built using React Native Expo(TS) consist of 70+ APIs | served to real users \n -Implemented Client Side <strong>payment using Razorpay</strong> \n -Implemented <strong>Chat</strong> System",
-      playstore:
-        "https://play.google.com/store/apps/details?id=com.developerknowforth.exhibitor",
-      github: "",
-    },
-    {
-      name: "React Native Expo",
-      description:
-        "Built using React Native Expo(TS) consist of 30+ APIs | served to real users \n -Implemented <strong>Chat</strong> System  \n -State management using <strong>Custom</strong> states",
-      playstore:
-        "https://play.google.com/store/apps/details?id=com.developerknowforth.visitor",
-      github: "",
-    },
-  ];
-
-  const experience: Experience[] = [
-    {
-      title: "Freelance Cross-Plateform App Developer",
-      company: "Stealth",
-      period: "March 2025 - present",
-      description: "Continuously building and shipping production ready apps",
-    },
-    {
-      title: "Web Dev intern",
-      company: "Starlight Foundation",
-      period: "Feb 2024 - Apr 2024",
-      description:
-        "Rebuilt entire web stack using React.js and Firebase Cloud \n -Improved site performance by <strong>70%</strong> by reducing unneccessary loads \n -Optimized Components for improved performance and scalibility \n -Continously contributed to the repo by discussing with founders",
-    },
-  ];
-  const proofOfWork = [
-    {
-      type: "Commit",
-      text: "Implemented Payments using Dodo Payments",
-      url: "https://github.com/adnankhan46/campusx/commit/bcb5378312060c2dac63e6ac7847756aea743ca1",
-    },
-    {
-      type: "Commit",
-      text: "Added NSFW Content Filteration for Posts using tensorflow.js",
-      url: "https://github.com/adnankhan46/campusx/commit/fe7e3e8a74099f6d79f5c1c20910b6fa3e9a7fd3",
-    },
-  ];
 
   return (
     <div className="bg-white text-gray-900 pb-2">
