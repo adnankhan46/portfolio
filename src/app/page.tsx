@@ -140,8 +140,7 @@ export default function Home() {
                   Research Projects
                 </h2>
                 <ul className="space-y-4">
-                  Improving LLM response accuracy for campus social data using
-                  domain-tuned retrieval (i will update it)
+                 running for it
                 </ul>
               </section>
             </main>

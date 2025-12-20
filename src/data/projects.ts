@@ -59,12 +59,12 @@ export const allProjects: Project[] = [
     openSource: true,
     screenshot: "/projects/CampusX/cx-opp-ui.png",
     skills: [
-      "React",
+      "ReactJS",
       "MongoDB Aggregation Pipelines",
       "NodeJS",
       "DodoPayments",
       "TensorFlow",
-      "SocketIO",
+      "Socket.io",
       "OCR"
     ],
   },
@@ -80,10 +80,10 @@ export const allProjects: Project[] = [
     openSource: true,
     screenshot: "/projects/BooleanAI/booleanai-webui.png",
     skills: [
-      "React",
+      "ReactJS",
       "NodeJS",
       "LLM API",
-      "Web Canvas",
+      "Web Canvas API",
       "Docker",
       "Tailwindcss",
       "ExpressJS",
@@ -96,7 +96,7 @@ export const allProjects: Project[] = [
       "Multi-user RAG app where people can chat collaboratively with multiple PDFs in a shared room. We built this feature even before perplexity & chatGPT.",
     year: "(20 Mar 2025)",
     github: "https://www.github.com/adnankhan46/collab-gpt-rag",
-    url: "",
+    url: "https://collab-gpt-rag.vercel.app",
     live: false,
     playstore: "",
     openSource: true,
@@ -108,7 +108,8 @@ export const allProjects: Project[] = [
       "Pinecone Vector DB",
       "Groq AI",
       "HuggingFace Embeddings",
-      "ExpressJS"
+      "ExpressJS",
+      "ReactJS",
     ],
   },
   {
@@ -125,7 +126,7 @@ export const allProjects: Project[] = [
       "Blockchain",
       "Solidity",
       "Ethereum/HardHat",
-      "React",
+      "ReactJS",
       "IPFS + Pinata",
       "MetaMask Wallet",
       "ExpressJS",
@@ -137,7 +138,7 @@ export const allProjects: Project[] = [
   {
     name: "KytBook",
     description:
-      "An online directory of Used books. A Consumer to consumer used book sharing app. List your used books, add pickup address, clear the desk.",
+      "An online directory of Used books. A Consumer to consumer used book sharing app, for students, by students. List your used books, add pickup address, clear the desk.",
     year: "(24 April 2021)",
     url: "",
     live: false,
@@ -147,7 +148,9 @@ export const allProjects: Project[] = [
     skills: [
       "React Native",
       "Figma",
-      "Flask"
+      "Flask",
+      "Product Design",
+      "Design Thinking",
     ],
   },
   {
@@ -164,20 +167,8 @@ export const allProjects: Project[] = [
       "React Native",
       "Figma",
       "Flask",
-      "Rapid API"
+      "Rapid API",
     ],
-  },
-  {
-    name: "BoolAI",
-    description:
-      "An assistant in your WhatsApp, call anywhere in any chat, ask group chat related questions, ask to explain received pdf. (puppeteer under the hood)",
-    year: "(4 June 2025)",
-    github: "https://www.github.com/adnankhan46/boolai",
-    url: "",
-    live: false,
-    playstore: "",
-    openSource: true,
-    screenshot: "",
   },
   {
     name: "Commit App",
@@ -191,9 +182,11 @@ export const allProjects: Project[] = [
     skills: [
       "React Native",
       "Expo",
-      "Honojs",
+      "ExpressJS",
       "PostgreSQL",
-      "Supabase",
+      "Redis",
+      "BullMQ",
+      "NextJS(landing)",
     ],
   },
   {
@@ -208,7 +201,25 @@ export const allProjects: Project[] = [
     screenshot: "/projects/TOP/top-mockup.png",
     skills: [
       "React Native",
-      "Figma"
+      "Figma",
+      "Product Design",
+    ]
+  },
+  {
+    name: "BoolAI",
+    description:
+      "An agent in your WhatsApp. Not by using WA Business API, but by reverse engineering whatsapp web browser functionality. Call anywhere in any chat, ask group chat related questions, ask to explain received pdf. (puppeteer under the hood)",
+    year: "(4 June 2025)",
+    github: "",
+    url: "",
+    live: false,
+    playstore: "",
+    openSource: true,
+    screenshot: "",
+     skills: [
+      "Whatsweb.js (on top of puppeteer)",
+      "NodeJS",
+      "CLI"
     ]
   },
   {
@@ -234,6 +245,8 @@ export const allProjects: Project[] = [
     url: "",
     live: false,
     playstore: "",
-    skills: ["WEB 2.0","HTML", "CSS", "Email Notify"]
+    skills: ["WEB 2.0","HTML", "CSS", "Web Notify"],
+        screenshot: "/projects/PetrolNow/petrol-now-mockup.png",
+
   },
 ];

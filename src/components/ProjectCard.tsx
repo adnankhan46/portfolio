@@ -34,7 +34,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
             </div>
           </div>
           {project.openSource && (
-            <span className="text-[0.54rem] bg-gray-50 text-green-400 px-2 py-[2px] rounded-lg rotate-[5deg] shadow-sm uppercase tracking-wide">
+            <span className="text-[0.54rem] bg-green-100/40 text-green-600 px-2 py-[2px] rounded-lg rotate-[5deg] shadow-sm uppercase tracking-wide">
               open-source
             </span>
           )}
@@ -84,20 +84,23 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
         ))}
       </div>
 
-      <div className="flex gap-2 my-2">
+      <div className="flex gap-2 mt-2">
         {project.github && (
           <Link
             href={project.github}
-            className="text-sm bg-gray-200 px-3 py-1 rounded-lg inline cursor-pointer"
+            className="text-sm bg-gray-50 px-2 py-1 rounded-lg inline cursor-pointer border-dashed border-2 border-gray-400"
           >
             Github
           </Link>
         )}
 
         {project.url && (
-          <div className="text-sm bg-gray-200 px-3 py-1 rounded-lg inline cursor-pointer">
-            <Link href={project.url}>View</Link>
-          </div>
+          <Link
+            href={project.url}
+            className="text-sm bg-gray-50 px-2 py-1 rounded-lg inline cursor-pointer border-dashed border-2 border-gray-400"
+          >
+            View
+          </Link>
         )}
       </div>
     </div>
