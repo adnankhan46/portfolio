@@ -30,6 +30,14 @@ const Footer: React.FC = () => {
         >
           Twitter (X)
         </a>
+        <a
+          href="mailto:adnank122333@gmail.com"
+          className="hover:underline"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Mail
+        </a>
       </div>
     </footer>
   );
