@@ -74,7 +74,7 @@ export const allProjects: Project[] = [
       "A digital electronics helper where students can draw or upload questions like K-Maps, logic gates, or code conversions and instantly get the solved answers.",
     year: "(29 Oct 2024)",
     github: "https://www.github.com/adnankhan46/booleanai",
-    url: "https:booleanai.vercel.app",
+    url: "https://booleanai.vercel.app",
     live: true,
     playstore: "",
     openSource: true,
