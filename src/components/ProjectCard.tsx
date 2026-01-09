@@ -1,9 +1,9 @@
-
-import React from 'react';
+import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { Project } from "@/lib/types";
 import { parseMarkdownLinks, MarkdownPart } from "@/utils/markdownParser";
+import { ProjectButton, ProjectButtonBuildSpace } from "./ui/ProjectButton";
 
 interface ProjectCardProps {
   project: Project;
@@ -11,9 +11,7 @@ interface ProjectCardProps {
 
 const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
   return (
-    <div
-      className="flex flex-col border-l-2 border-gray-200 pl-4"
-    >
+    <div className="flex flex-col border-l-2 border-gray-200 pl-4">
       <div className="flex flex-col">
         <div className="flex items-center justify-between mb-2">
           <div className="flex items-center gap-3">
@@ -55,7 +53,9 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
                   </Link>
                 );
               }
-              return <React.Fragment key={index}>{part.content}</React.Fragment>;
+              return (
+                <React.Fragment key={index}>{part.content}</React.Fragment>
+              );
             }
           )}
         </p>
@@ -86,22 +86,11 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
 
       <div className="flex gap-2 mt-2">
         {project.github && (
-          <Link
-            href={project.github}
-            className="text-sm bg-gray-50 px-2 py-1 rounded-lg inline cursor-pointer border-dashed border-2 border-gray-400"
-          >
-            Github
-          </Link>
+          <ProjectButton href={project.github} label="Github" />
         )}
+        {project.url && <ProjectButton href={project.url} label="View" />}
+        {project.place && <ProjectButtonBuildSpace href={"https://buildspace.so"} label="BuildSpace S3" />}
 
-        {project.url && (
-          <Link
-            href={project.url}
-            className="text-sm bg-gray-50 px-2 py-1 rounded-lg inline cursor-pointer border-dashed border-2 border-gray-400"
-          >
-            View
-          </Link>
-        )}
       </div>
     </div>
   );

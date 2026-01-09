@@ -11,6 +11,7 @@ export interface Project {
   screenshot?: string; // project screenshot
   openSource?: boolean; // show an open-source badge when true
   skills?: string[]; // Project Skills
+  place?: string; // like hackathon
 }
 
 export interface Experience {

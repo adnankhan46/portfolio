@@ -54,6 +54,7 @@ export const allProjects: Project[] = [
     year: "(10 Nov 2023)",
     github: "https://www.github.com/adnankhan46/campusx",
     url: "",
+    place: "BuildSpace",
     live: false,
     playstore: "",
     openSource: true,
