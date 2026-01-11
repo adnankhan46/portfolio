@@ -24,7 +24,7 @@ const Navbar: React.FC = () => {
       md:bottom-auto
       ${isScrolled 
         ? "md:top-2" // Keep base styles (glass pill)
-        : "md:top-2 md:w-[95%] md:max-w-5xl md:px-0 md:bg-transparent md:backdrop-blur-none md:border-none md:shadow-none md:ring-0 md:pointer-events-none" // Remove glass styles
+        : "md:top-2 md:w-[95%] md:max-w-[68rem] md:px-0 md:bg-transparent md:backdrop-blur-none md:border-none md:shadow-none md:ring-0 md:pointer-events-none" // Remove glass styles
       }
     `}>
       

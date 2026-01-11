@@ -1,15 +1,15 @@
 import { Experience } from "@/lib/types";
 
-const freelanceDesc =`Involved in building Production grade, <strong>type-safe React Native App</strong>.
-- Built entire app using React Native Expo consist of <strong>80+ APIs</strong>
-- Serving to <strong>real</strong> users
-- Implemented Client Side Payment system using <strong>Razorpay</strong>
-- Implemented <strong>Chat Systems</strong> in both app, optimized for scale.
+const freelanceDesc =`Architected and delivered production grade <strong>typesafe</strong> React Native Expo app.
+• Engineered a scalable API integration layer consuming <strong>80+ Backend endpoints.</strong>
+•  Served to <strong>real users</strong> in production environment.
+• Implemented Client Side Payment system using <strong>Razorpay</strong>, enabling secure, low-latency transactions with reliable failure handling.
+• Implemented <strong>Chat Systems</strong> across multiple app surfaces.
 `
-const internDesc =`Rebuilt entire web stack using <strong>React.js</strong> and <strong>Firebase Cloud</strong>
-- Improved site performance by <strong>70%</strong> by reducing unneccessary loads
-- Optimized Components for improved performance and scalibility
-- Continously contributed to the repo by discussing with founders
+const internDesc =`Rebuilt entire web application using <strong>React.js</strong> and <strong>Firebase Cloud</strong> significantly improving UI consistency, usability, and overall user experience.
+• Improved site performance by <strong>70%</strong>.
+• Refactored and optimized React component architecture, improving rendering efficiency and long-term maintainability.
+•  All of the decisions were taken under the guidance of founder with 1:1 weekly sessions.
 `
 
 export const experience: Experience[] = [

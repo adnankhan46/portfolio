@@ -76,7 +76,7 @@ export default function Home() {
                 </div>
 
                 {/* Projects Content */}
-                <div className={`p-4`}>
+                <div className={`p-1`}>
                   <ul className="space-y-4">
                     {(activeTab === "personal"
                       ? personalProjects

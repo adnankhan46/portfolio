@@ -10,7 +10,7 @@ interface ProjectListItemProps {
 
 const ProjectListItem: React.FC<ProjectListItemProps> = ({ project, isClientProject }) => {
   return (
-    <li className="flex flex-col border-l-2 border-gray-200 pl-4">
+    <li className="flex flex-col border-l-2 border-gray-200 pl-3">
       <div className="flex flex-col">
         <h3 className="font-semibold">{project.name}</h3>
         <p
