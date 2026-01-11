@@ -2,6 +2,7 @@
 import React from 'react';
 import Link from 'next/link';
 import { Project } from "@/lib/types";
+import { ProjectButton } from './ui/ProjectButton';
 
 interface ProjectListItemProps {
   project: Project;
@@ -24,30 +25,14 @@ const ProjectListItem: React.FC<ProjectListItemProps> = ({ project, isClientProj
       <div className="flex gap-2 my-2">
         {isClientProject
           ? project.playstore && (
-              <Link
-                href={project.playstore}
-                className="text-sm bg-gray-100 px-3 py-1 rounded-lg inline cursor-pointer"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Playstore URL
-              </Link>
+              <ProjectButton href={project.playstore} label='Playstore URL'/>
             )
           : project.github && (
-              <Link
-                href={project.github}
-                className="text-sm bg-gray-100 px-3 py-1 rounded-lg inline cursor-pointer"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Github
-              </Link>
+              <ProjectButton href={project.github} label='Github'/>
             )}
 
         {project.url && (
-          <div className="text-sm bg-gray-100 px-3 py-1 rounded-lg inline cursor-pointer">
-            <Link href={project.url} target="_blank" rel="noopener noreferrer">View</Link>
-          </div>
+          <ProjectButton href={project.url} label='View'/>
         )}
       </div>
     </li>
