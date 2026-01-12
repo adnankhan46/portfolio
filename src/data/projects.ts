@@ -4,26 +4,33 @@ export const personalProjects: Project[] = [
   {
     name: "CampusX",
     description:
-      "<strong>Incentivized Opportunity finding Social App</strong> | A social app in the campus that connects students with companies offering paid micro-tasks, such as: Engagement tasks, Survey tasks, Marketing tasks, Work experience tasks.\n<strong>My Work:</strong>\n• Implemented Payment System using <strong> Dodo Payments </strong>\n• Implemented NSFW Content Filteration using <strong> Tensorflow.js </strong>\n• Continuously building and scaling the product for the campusx in <strong> VPS </strong> with a 2-person team",
+      "<strong>Incentivized Opportunity finding Social App</strong> | A social app that connects students with companies offering paid micro-tasks, such as Engagement tasks, Survey tasks, Marketing tasks, Work experience tasks.\n• Implemented Payment System using <strong> Dodo Payments </strong>\n• Implemented NSFW Content Filteration using <strong> Tensorflow.js </strong>\n• Continuously building and scaling the product for the campusx in <strong> VPS </strong> with a 2-person team",
     github: "https://www.github.com/adnankhan46/campusx",
     url: "",
-    playstore: "",
   },
   {
-    name: "BooleanAI",
+    name: "CollabGPT",
     description:
-      "AI Digital Electronics Question Solver | Sketch Questions on Whiteboard or Upload an Image for Logic Gates, Code Conversions (BCD to Excess 3, etc.), K-Map, Binary Arithmetic, Boolean Algebra.",
-    github: "https://www.github.com/adnankhan46/booleanai",
-    url: "https://booleanai.vercel.app",
-    playstore: "",
+      "Multi user RAG app where people can chat collaboratively with <strong>multiple PDFs</strong> in a shared room. Built this feature even <strong>before</strong> perplexity & chatgpt.",
+    github: "https://www.github.com/adnankhan46/collab-gpt-rag",
+    url: "https://collab-gpt-rag.vercel.app",
+    skills: [
+      "RAG",
+      "Langchain",
+      "Pinecone Vector DB",
+      "Groq AI",
+      "HuggingFace Embeddings",
+      "ExpressJS",
+      "ReactJS",
+      "NodeJS"
+    ],
   },
   {
     name: "A toy Javascript game - for fun* ",
     description:
-      "A fun javascript obstable avoiding game. The game recieved 200+ unique visitors within 1st hour of launch in the college Campus ",
+      "A fun javascript obstable avoiding game. The game recieved <strong>200+</strong> unique visitors within <strong>1st hour of launch</strong> in the college Campus ",
     github: "https://www.github.com/adnankhan46/falak-superman-game",
     url: "https://falaksuperman.netlify.app",
-    playstore: "",
   },
 ];
 

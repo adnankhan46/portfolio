@@ -22,6 +22,17 @@ const ProjectListItem: React.FC<ProjectListItemProps> = ({ project, isClientProj
         ></p>
       </div>
 
+      <div className="flex flex-wrap gap-1">
+        {project?.skills?.map((skill) => (
+          <div
+            key={skill}
+            className="text-xs bg-gray-100 px-2 py-1 rounded-md whitespace-nowrap"
+          >
+            {skill}
+          </div>
+        ))}
+      </div>
+
       <div className="flex gap-2 my-2">
         {isClientProject
           ? project.playstore && (
