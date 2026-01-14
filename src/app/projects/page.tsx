@@ -13,7 +13,7 @@ function page() {
   return (
     <div className={`${inter.className} bg-white text-gray-900 pb-2`}>
       <div className="flex items-center justify-center min-h-screen">
-        <div className="w-full max-w-3xl shadow-md rounded-lg">
+        <div className="w-full max-w-3xl shadow-sm shadow-black/10 ring-1 ring-black/10 rounded-sm">
           {/* Some headers */}
           <div>
             <div className="relative w-full rounded-lg h-36 md:h-52 lg:h-44">
@@ -27,7 +27,7 @@ function page() {
             </div>
           </div>
           <section className="all-projects mx-4 my-2">
-            <h2 className="text-4xl font-semibold my-6 font-serif">
+            <h2 className="text-4xl font-semibold mt-4 mb-6 font-serif">
               Some C<span style={{ fontFamily: "var(--ppe-italic)" }}>oo</span>l
               stuffs {`I've`} built
             </h2>

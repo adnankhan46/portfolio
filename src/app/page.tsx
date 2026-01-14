@@ -26,9 +26,9 @@ export default function Home() {
               priority
             />
           </div>
-          <div className="w-full max-w-3xl px-4 shadow-md rounded-lg">
+          <div className="w-full max-w-3xl px-4 shadow-sm shadow-black/10 ring-1 ring-black/10 rounded-sm">
             <header className="mb-4">
-              <h1 className="text-4xl font-bold mt-2">Adnan Khan</h1>
+              <h1 className="text-4xl font-bold pt-2">Adnan Khan</h1>
               <p className="text-lg mt-2">
                 I am pre-final year undergrad and a hobbyist developer
               </p>
