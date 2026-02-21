@@ -65,7 +65,7 @@ export const allProjects: Project[] = [
     live: false,
     playstore: "",
     openSource: true,
-    screenshot: "/projects/CampusX/cx-opp-ui.png",
+    screenshot: "/projects/CampusX/cx-landing-ui.png",
     skills: [
       "ReactJS",
       "MongoDB Aggregation Pipelines",
