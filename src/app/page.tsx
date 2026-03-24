@@ -47,8 +47,8 @@ export default function Home() {
               {/* ##################  Projects */}
               <section className="mb-6">
                 <h2 className="text-2xl font-semibold font-serif mb-4">
-                  Pr<span style={{ fontFamily: "var(--ppe-italic)" }}>o</span>
-                  jects
+                  <span style={{ fontFamily: "var(--ppe-italic)" }}>Projects</span>
+                  
                 </h2>
 
                 {/* Tab Navigation */}

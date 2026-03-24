@@ -24,7 +24,7 @@ const yourCustomFont = localFont({
 
 export const metadata: Metadata = {
   title: "Adnan Khan",
-  description: "Adnan Khan is a full stack developer with 3+ years of experience in building web, mobile applications and developer tools. He has built various projects using ReactJS, NextJS, NodeJS, ExpressJS, MongoDB, PostgreSQL, C++, Python and other technologies.",
+  description: "Adnan Khan is a full stack developer with 3+ years of experience in building web, mobile applications and developer tools. He has built various projects using ReactJS, NextJS, NodeJS, ExpressJS, MongoDB, PostgreSQL, C++, Python and other technologies. [adnankhan93, adnan khan 93, ak93]",
 };
 
 export default function RootLayout({

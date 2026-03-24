@@ -6,7 +6,7 @@ export const personalProjects: Project[] = [
     description:
       "<strong>Incentivized Opportunity finding Social App</strong> | A social app that connects students with companies offering paid micro-tasks, such as Engagement tasks, Survey tasks, Marketing tasks, Work experience tasks.\n• Implemented Payment System using <strong> Dodo Payments </strong>\n• Implemented NSFW Content Filteration using <strong> Tensorflow.js </strong>\n• Continuously building and scaling the product for the campusx in <strong> VPS </strong> with a 2-person team",
     github: "https://www.github.com/adnankhan46/campusx",
-    url: "",
+    url: "https://campusx-1kz4.onrender.com",
   },
   {
     name: "CollabGPT",
@@ -60,12 +60,12 @@ export const allProjects: Project[] = [
       "A campus-based social platform where students get paid and experience by completing real company micro-tasks such as development, marketing, surveys and engagement activities.",
     year: "(10 Nov 2023)",
     github: "https://www.github.com/adnankhan46/campusx",
-    url: "",
+    url: "https://campusx-1kz4.onrender.com",
     place: "BuildSpace",
     live: false,
     playstore: "",
     openSource: true,
-    screenshot: "/projects/CampusX/cx-landing-ui.png",
+    screenshot: "/projects/CampusX/cx-webui.png",
     skills: [
       "ReactJS",
       "MongoDB Aggregation Pipelines",
