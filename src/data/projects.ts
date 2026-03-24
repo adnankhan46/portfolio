@@ -121,6 +121,27 @@ export const allProjects: Project[] = [
     ],
   },
   {
+    name: "Commit App",
+    description:
+      "An invite only habit commitment platform where your friends profit from your failures. Currently down due to india's betting apps regulations. Invites are still open.",
+    year: "(20 August 2025)",
+    github: "https://www.github.com/adnankhan46/commit-backend",
+    url: "https://getcommit.vercel.app",
+    live: false,
+    playstore: "",
+    logo: "/projects/CommitApp/c-logo.png",
+    screenshot: "/projects/CommitApp/commit-ui.png",
+    skills: [
+      "React Native",
+      "Expo",
+      "ExpressJS",
+      "PostgreSQL",
+      "Redis",
+      "BullMQ",
+      "NextJS(landing)",
+    ],
+  },
+  {
     name: "Land Registry Web3",
     description:
       "A decentralized land governance system that secures tribal land rights using blockchain and geo-tagged verification.  Won 2nd at IIIT NAYA RAIPUR",
@@ -176,25 +197,6 @@ export const allProjects: Project[] = [
       "Figma",
       "Flask",
       "Rapid API",
-    ],
-  },
-  {
-    name: "Commit App",
-    description:
-      "An invite-only habit commitment platform where your friends profit from your failures. Currently down due to india's betting apps regulations. Invites are still open.",
-    year: "(20 August 2025)",
-    url: "https://getcommit.vercel.app",
-    live: false,
-    playstore: "",
-    screenshot: "/projects/CommitApp/commit-ui.png",
-    skills: [
-      "React Native",
-      "Expo",
-      "ExpressJS",
-      "PostgreSQL",
-      "Redis",
-      "BullMQ",
-      "NextJS(landing)",
     ],
   },
   {
