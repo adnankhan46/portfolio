@@ -34,3 +34,20 @@ export const ProjectButtonBuildSpace = ({
     </div>
   );
 };
+
+export const ProjectButtonYoutube = ({
+  href,
+  label,
+}: ProjectButtonProps) => {
+  return (
+    <div className="flex justify-center items-center border-2 border-white bg-[#FF0000]  rounded-lg gap-1 px-1">
+    <Link
+      href={href}
+      className="text-sm text-white py-1 inline cursor-pointer"
+    >
+      {label}
+    </Link>
+      <MoveUpRight size={14} color="white"/>
+    </div>
+  );
+};

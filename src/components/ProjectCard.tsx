@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Project } from "@/lib/types";
 import { parseMarkdownLinks, MarkdownPart } from "@/utils/markdownParser";
-import { ProjectButton, ProjectButtonBuildSpace } from "./ui/ProjectButton";
+import { ProjectButton, ProjectButtonBuildSpace, ProjectButtonYoutube } from "./ui/ProjectButton";
 
 interface ProjectCardProps {
   project: Project;
@@ -19,8 +19,8 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
               <Image
                 src={project.logo}
                 alt={`${project.name} logo`}
-                width={54}
-                height={54}
+                width={46}
+                height={46}
                 className="rounded-lg"
               />
             )}
@@ -89,7 +89,8 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
           <ProjectButton href={project.github} label="Github" />
         )}
         {project.url && <ProjectButton href={project.url} label="View" />}
-        {project.place && <ProjectButtonBuildSpace href={"https://buildspace.so"} label="BuildSpace S3" />}
+        {project.place==="BuildSpace S3" && project.demoUrl && <ProjectButtonBuildSpace href={project.demoUrl} label={project.place} />}
+        {project.place==="YouTube" && project.demoUrl && <ProjectButtonYoutube href={project.demoUrl} label={project.place} />}
 
       </div>
     </div>

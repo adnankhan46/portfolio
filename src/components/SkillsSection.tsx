@@ -4,7 +4,7 @@ import { skills } from "@/data/skills";
 
 const SkillsSection: React.FC = () => {
   return (
-    <section className="mb-10">
+    <section className="mb-6">
       <h2 className="text-2xl font-semibold mb-4">Skills</h2>
 
       <div className="flex flex-wrap gap-2">

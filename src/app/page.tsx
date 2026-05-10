@@ -30,7 +30,7 @@ export default function Home() {
             <header className="mb-4">
               <h1 className="text-4xl font-bold pt-2">Adnan Khan</h1>
               <p className="text-lg mt-2">
-                I am pre-final year undergrad and a hobbyist developer
+                I am pre-final year undergrad and a hobbyist developer, builder
               </p>
               <p className="text-lg mt-2">I started programming at 13</p>
             </header>
@@ -134,15 +134,6 @@ export default function Home() {
               {/* ################## Exp */}
               <ExperienceSection />
               
-              {/* ################## Research Project */}
-              <section className="mb-10">
-                <h2 className="text-2xl font-semibold mb-4">
-                  Research Projects
-                </h2>
-                <ul className="space-y-4">
-                 running for it
-                </ul>
-              </section>
             </main>
 
             <Footer />
