@@ -19,7 +19,7 @@ export default function Home() {
         <div>
           <div className="relative w-full h-36 md:h-52 lg:h-44">
             <Image
-              src="/background/wallpaper.avif"
+              src="/background/header-p1.png"
               alt="Landscape banner"
               fill
               style={{ objectFit: "cover" }}
@@ -32,7 +32,7 @@ export default function Home() {
               <p className="text-lg mt-2">
                 I am pre-final year undergrad and a hobbyist developer, builder
               </p>
-              <p className="text-lg mt-2">I started programming at 13</p>
+              <p className="text-lg mt-1">I started programming at 13</p>
             </header>
 
             {/* @Socials */}

@@ -16,7 +16,7 @@ export const experience: Experience[] = [
   {
     title: "Freelance Cross-Plateform App Developer",
     company: "Stealth",
-    period: "March 2025 - present",
+    period: "March 2025 - Oct 2025",
     description: freelanceDesc,
   },
   {
