@@ -19,7 +19,7 @@ export default function Home() {
         <div>
           <div className="relative w-full h-36 md:h-52 lg:h-44">
             <Image
-              src="/background/header-p1.png"
+              src="/background/h-ig.png"
               alt="Landscape banner"
               fill
               style={{ objectFit: "cover" }}
