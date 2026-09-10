@@ -30,9 +30,9 @@ export default function Home() {
             <header className="mb-4">
               <h1 className="text-4xl font-bold pt-2">Adnan Khan</h1>
               <p className="text-lg mt-2">
-                I am pre-final year undergrad and a hobbyist developer, builder
+                I like building and shipping things
               </p>
-              <p className="text-lg mt-1">I started programming at 13</p>
+              <p className="text-sm mt-1">Excited about open source, developer tools, agents</p>
             </header>
 
             {/* @Socials */}
