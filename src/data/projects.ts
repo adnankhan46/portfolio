@@ -251,7 +251,7 @@ export const allProjects: Project[] = [
     live: false,
     playstore: "",
     openSource: true,
-    screenshot: "",
+    screenshot: "/projects/BoolAI/bool-ai.png",
      skills: [
       "Whatsweb.js (on top of puppeteer)",
       "NodeJS",

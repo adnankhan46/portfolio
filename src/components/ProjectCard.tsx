@@ -11,7 +11,7 @@ interface ProjectCardProps {
 
 const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
   return (
-    <div className="flex flex-col border-l-2 border-gray-200 pl-4">
+    <div className="flex flex-col border-l-2 theme-border pl-4">
       <div className="flex flex-col">
         <div className="flex items-center justify-between mb-2">
           <div className="flex items-center gap-3">
@@ -26,18 +26,18 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
             )}
             <div className="flex items-center gap-2">
               <h3 className="font-semibold">{project.name}</h3>
-              <h4 className="text-xs text-gray-500 font-semibold">
+              <h4 className="text-xs theme-muted font-semibold">
                 {project.year}
               </h4>
             </div>
           </div>
           {project.openSource && (
-            <span className="text-[0.54rem] bg-green-100/40 text-green-600 px-2 py-[2px] rounded-lg rotate-[5deg] shadow-sm uppercase tracking-wide">
+            <span className="text-[0.54rem] theme-accent-soft theme-accent px-2 py-[2px] rounded-lg rotate-[5deg] shadow-sm uppercase tracking-wide">
               open-source
             </span>
           )}
         </div>
-        <p className="text-sm text-gray-600 ">
+        <p className="text-sm theme-muted">
           {parseMarkdownLinks(project.description).map(
             (part: MarkdownPart, index: number) => {
               if (part.type === "link") {
@@ -45,7 +45,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
                   <Link
                     key={index}
                     href={part.url}
-                    className="text-blue-600 hover:underline"
+                    className="theme-link hover:underline"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -67,7 +67,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
               alt={`${project.name} screenshot`}
               width={600}
               height={300}
-              className="rounded-lg border border-gray-200 w-full"
+              className="rounded-lg border theme-border w-full"
             />
           </div>
         )}
@@ -77,7 +77,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
         {project?.skills?.map((skill) => (
           <div
             key={skill}
-            className="text-xs bg-gray-100 px-2 py-1 rounded-md whitespace-nowrap"
+            className="text-xs theme-surface-muted px-2 py-1 rounded-md whitespace-nowrap"
           >
             {skill}
           </div>

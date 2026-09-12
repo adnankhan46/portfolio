@@ -2,7 +2,7 @@
 import Link from "next/link";
 import React from "react";
 
-const commonClassName = `text-gray-600 hover:text-blue-600 underline`
+const commonClassName = `theme-muted theme-link-hover underline`
 
 const SocialLinks: React.FC = () => {
   return (

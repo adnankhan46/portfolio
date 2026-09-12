@@ -3,7 +3,7 @@ import React from 'react';
 
 const Footer: React.FC = () => {
   return (
-    <footer id="socials" className="mt-10 text-center text-lg text-gray-500 pb-20 md:pb-8 scroll-mt-24">
+    <footer id="socials" className="mt-10 text-center text-lg theme-muted pb-20 pt-8 md:pb-8 scroll-mt-24 border-dashed border-t-2 theme-border hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors">
       <p className="text-sm"> © {new Date().getFullYear()} AK. All rights reserved.</p>
       <div className="mt-2 space-x-4">
         <a

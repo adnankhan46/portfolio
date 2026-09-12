@@ -11,9 +11,9 @@ function page() {
   const projects = allProjects;
 
   return (
-    <div className={`${inter.className} bg-white text-gray-900 pb-2`}>
+    <div className={`${inter.className} theme-surface pb-2`}>
       <div className="flex items-center justify-center min-h-screen">
-        <div className="w-full max-w-3xl shadow-sm shadow-black/10 ring-1 ring-black/10 rounded-sm">
+        <div className="theme-surface w-full max-w-3xl shadow-sm shadow-black/10 dark:shadow-black/40 ring-1 ring-black/10 dark:ring-white/10 rounded-sm">
           {/* Some headers */}
           <div>
             <div className="relative w-full rounded-lg h-36 md:h-52 lg:h-44">

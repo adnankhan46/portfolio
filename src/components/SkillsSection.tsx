@@ -11,7 +11,7 @@ const SkillsSection: React.FC = () => {
         {skills.map((skill) => (
           <span
             key={skill}
-            className="bg-gray-100 px-3 py-1 rounded-lg text-sm"
+            className="theme-surface-muted px-3 py-1 rounded-lg text-sm"
           >
             {skill}
           </span>

@@ -10,7 +10,7 @@ export const ProjectButton = ({ href, label }: ProjectButtonProps) => {
   return (
     <Link
       href={href}
-      className="text-sm bg-gray-50 px-2 py-1 rounded-lg inline cursor-pointer border-dashed border-2 border-gray-400 hover:bg-gray-100 transition-colors"
+      className="text-sm theme-surface-muted px-2 py-1 rounded-lg inline cursor-pointer border-dashed border-2 theme-border hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors"
     >
       {label}
     </Link>

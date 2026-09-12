@@ -11,11 +11,11 @@ interface ProjectListItemProps {
 
 const ProjectListItem: React.FC<ProjectListItemProps> = ({ project, isClientProject }) => {
   return (
-    <li className="flex flex-col border-l-2 border-gray-200 pl-3">
+    <li className="flex flex-col border-l-2 theme-border pl-3">
       <div className="flex flex-col">
         <h3 className="font-semibold">{project.name}</h3>
         <p
-          className="text-sm text-gray-600 whitespace-pre-line"
+          className="text-sm theme-muted whitespace-pre-line"
           dangerouslySetInnerHTML={{
             __html: project.description,
           }}
@@ -26,7 +26,7 @@ const ProjectListItem: React.FC<ProjectListItemProps> = ({ project, isClientProj
         {project?.skills?.map((skill) => (
           <div
             key={skill}
-            className="text-xs bg-gray-100 px-2 py-1 rounded-md whitespace-nowrap"
+            className="text-xs theme-surface-muted px-2 py-1 rounded-md whitespace-nowrap"
           >
             {skill}
           </div>

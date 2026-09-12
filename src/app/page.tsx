@@ -14,7 +14,7 @@ export default function Home() {
   const [activeTab, setActiveTab] = useState<"personal" | "client">("personal");
 
   return (
-    <div className="bg-white text-gray-900 pb-2">
+    <div className="theme-surface pb-2">
       <div className="flex items-center justify-center min-h-screen">
         <div>
           <div className="relative w-full h-36 md:h-52 lg:h-44">
@@ -26,7 +26,7 @@ export default function Home() {
               priority
             />
           </div>
-          <div className="w-full max-w-3xl px-4 shadow-sm shadow-black/10 ring-1 ring-black/10 rounded-sm">
+          <div className="theme-surface w-full max-w-3xl px-4 shadow-sm shadow-black/10 dark:shadow-black/40 ring-1 ring-black/10 dark:ring-white/10 rounded-sm">
             <header className="mb-4">
               <h1 className="text-4xl font-bold pt-2">Adnan Khan</h1>
               <p className="text-lg mt-2">
@@ -52,13 +52,13 @@ export default function Home() {
                 </h2>
 
                 {/* Tab Navigation */}
-                <div className="flex mb-4 border-b border-gray-200">
+                <div className="flex mb-4 border-b theme-border">
                   <button
                     onClick={() => setActiveTab("personal")}
                     className={`px-4 py-2 font-medium text-sm border-b-2 transition-colors ${
                       activeTab === "personal"
-                        ? "border-gray-400 bg-gray-100 rounded-t-lg"
-                        : "border-transparent text-gray-500 hover:text-gray-700"
+                        ? "theme-border theme-surface-muted rounded-t-lg"
+                        : "border-transparent theme-muted hover:text-gray-700 dark:hover:text-gray-200"
                     }`}
                   >
                     Personal Projects
@@ -67,8 +67,8 @@ export default function Home() {
                     onClick={() => setActiveTab("client")}
                     className={`px-4 py-2 font-medium text-sm border-b-2 transition-colors ${
                       activeTab === "client"
-                        ? "border-gray-400 bg-gray-100 rounded-t-lg"
-                        : "border-transparent text-gray-500 hover:text-gray-700"
+                        ? "theme-border theme-surface-muted rounded-t-lg"
+                        : "border-transparent theme-muted hover:text-gray-700 dark:hover:text-gray-200"
                     }`}
                   >
                     Client Works

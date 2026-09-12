@@ -17,14 +17,14 @@ const ProofOfWorkSection: React.FC = () => {
           <a
             key={index}
             href={item.url}
-            className="border border-gray-300 rounded-lg p-4 flex items-center space-x-3 hover:bg-gray-100 transition-colors duration-200"
+            className="border theme-border rounded-lg p-4 flex items-center space-x-3 theme-surface-hover transition-colors duration-200"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <span className="text-gray-600">
+            <span className="theme-muted">
               <GitMerge size={24}/>
             </span>
-            <span className="text-black">{item.text}</span>
+            <span>{item.text}</span>
           </a>
         ))}
       </div>
