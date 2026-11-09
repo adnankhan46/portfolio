@@ -29,10 +29,11 @@ export default function Home() {
           <div className="theme-surface w-full max-w-3xl px-4 shadow-sm shadow-black/10 dark:shadow-black/40 ring-1 ring-black/10 dark:ring-white/10 rounded-sm">
             <header className="mb-4">
               <h1 className="text-4xl font-bold pt-2">Adnan Khan</h1>
-              <p className="text-lg mt-2">
-                I like building and shipping things
+              <p className="text-md mt-1">
+                Engineer | Builder
               </p>
-              <p className="text-sm mt-1">Excited about open source, developer tools, agents</p>
+              <p className="text-sm mt-1">• I like building and shipping things</p>
+              <p className="text-sm mt-1">• open source, developer tools, agents driven softwares - ignites me</p>
             </header>
 
             {/* @Socials */}
