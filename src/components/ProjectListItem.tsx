@@ -35,8 +35,8 @@ const ProjectListItem: React.FC<ProjectListItemProps> = ({ project, isClientProj
 
       <div className="flex gap-2 my-2">
         {isClientProject
-          ? project.playstore && (
-              <ProjectButton href={project.playstore} label='Playstore URL'/>
+          ? project.playstore &&  (
+              <ProjectButton href={project.playstore} label='Playstore URL' inActive={true}/>
             )
           : project.github && (
               <ProjectButton href={project.github} label='Github'/>

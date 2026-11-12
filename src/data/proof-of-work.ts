@@ -3,7 +3,7 @@ import { ProofOfWork } from "@/lib/types";
 export const proofOfWork: ProofOfWork[] = [
   {
     type: "PR",
-    text: "improved web for The Linux Foundation / hiero-ledger",
+    text: "improved web for linux foundation/hiero-ledger",
     url: "https://github.com/hiero-ledger/heka-identity-platform/pull/135",
   },
   {

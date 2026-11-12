@@ -3,7 +3,7 @@ import React from 'react';
 
 const Footer: React.FC = () => {
   return (
-    <footer id="socials" className="mt-10 text-center text-lg theme-muted pb-20 pt-8 md:pb-8 scroll-mt-24 border-dashed border-t-2 theme-border hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors">
+    <footer id="socials" className="mt-10 text-center text-lg theme-muted pb-16 pt-8 md:pb-8 scroll-mt-24 border-dashed border-t-2 theme-border transition-colors">
       <p className="text-sm"> © {new Date().getFullYear()} AK. All rights reserved.</p>
       <div className="mt-2 space-x-4">
         <a
@@ -39,6 +39,7 @@ const Footer: React.FC = () => {
           Mail
         </a>
       </div>
+      <div style={{ fontFamily: "var(--ppe-italic)", opacity: 0.5}} className='text-md mt-3 text-sm '>Among all the wonders of this world, humanity remains His finest creation</div>
     </footer>
   );
 };

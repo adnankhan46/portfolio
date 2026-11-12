@@ -4,16 +4,27 @@ import Link from "next/link";
 interface ProjectButtonProps {
   href: string;
   label: string;
+  inActive?: boolean;
 }
  // Common projct button
-export const ProjectButton = ({ href, label }: ProjectButtonProps) => {
+export const ProjectButton = ({ href, label, inActive }: ProjectButtonProps) => {
   return (
+    <>
+   { (inActive) ?
+    <Link
+      href={href}
+      className="text-sm theme-surface-muted px-2 py-1 rounded-lg inline cursor-not-allowed border-dashed border-2 theme-border hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors"
+      >
+      {label} {"(Deployment Paused)"}
+    </Link>
+    :
     <Link
       href={href}
       className="text-sm theme-surface-muted px-2 py-1 rounded-lg inline cursor-pointer border-dashed border-2 theme-border hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors"
-    >
+      >
       {label}
-    </Link>
+    </Link>}
+      </>
   );
 };
 

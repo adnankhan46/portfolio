@@ -17,7 +17,7 @@ const ProofOfWorkSection: React.FC = () => {
           <a
             key={index}
             href={item.url}
-            className="border theme-border rounded-lg p-4 flex items-center space-x-3 theme-surface-hover transition-colors duration-200"
+            className="border theme-border rounded-lg px-4 py-2 flex items-center space-x-3 theme-surface-hover transition-colors duration-200"
             target="_blank"
             rel="noopener noreferrer"
           >
